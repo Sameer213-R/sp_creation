@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photopoli Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img.logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 40px; /* Adjust height as needed */
+            border-radius: 8px; /* Adjust border radius as needed */
+            object-fit: cover; /* Ensures the image scales correctly */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #007acc;
+        }
+
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e9ecef;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .about h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .portfolio {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .portfolio-item h3 {
+            margin: 15px 0 10px;
+            font-size: 24px;
+            color: #007acc;
+        }
+
+        .portfolio-item p {
+            padding: 0 15px 15px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .portfolio-item iframe {
+            width: 100%;
+            border: none;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            height: 200px; /* Adjust height as needed */
+        }
+
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .contact h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-info div {
+            margin: 10px 0;
+        }
+
+        .contact-info i {
+            color: #007acc;
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .resume {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #e9ecef;
+        }
+
+        .resume h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .resume p {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #007acc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Photopoli</h1>
+        <p>Your gateway to the best in Python, Data Analysis, and Power BI.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Myself</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <section id="about" class="about">
+        <img src="myphoto.jpg.jpeg" alt="Your Photo">
+        <h2>About Myself</h2>
+        <p><strong> Sameer Ratnakar Pawar</strong></p>
+        <p>Welcome to my portfolio! I am a passionate data analyst with expertise in Python programming, data analysis, and Power BI. As the owner of SP Creation, my mission is to transform data into meaningful insights that drive business success. With a strong foundation in data science, I specialize in creating dynamic dashboards, automating data workflows, and providing data-driven solutions.</p>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio-item">
+            <img src="1.jpg" alt="Project 1">
+            <h3>Project 1: Python Project for Product Verification</h3>
+            <p>This project involves creating a unique key for each product, which is scanned via a QR code to display all relevant details on our app.</p>
+            <iframe src="sp.mp4" title="Project 1 Video"></iframe>
+        </div>
+        <div class="portfolio-item">
+            <img src="2.jpg" alt="Project 2">
+            <h3>Project 2: Dynamic Dashboards in Power BI</h3>
+            <p>Creating interactive visualizations with Power BI.</p>
+            <iframe src="YouCut_20240818_234855798.mp4" title="Project 2 Video"></iframe>
+        </div>
+        <div class="portfolio-item">
+            <img src="3.jpg" alt="Workshop">
+            <h3>Project 3: Workshop at College</h3>
+            <p>This project involved conducting a workshop at my college to teach students about data analysis using Python. The workshop included practical exercises and real-world applications of data analysis techniques.</p>
+            <iframe src="present.mp4" title="Workshop Video"></iframe>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-envelope"></i>Email: <a href="mailto:your-pawars2130@gmail.com">your-pawars2130@gmail.com</a>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>Phone: 9730746958
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>Address: Ahmednagar, Maharashtra
+            </div>
+            <div>
+                <i class="fas fa-linkedin"></i>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">your-profile</a>
+            </div>
+            <div>
+                <i class="fas fa-globe"></i>Website: <a href="https://your-website.com" target="_blank">your-website.com</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <p>You can view and download my resume <a href="sameer resume.docx" target="_blank">here</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Photopoli. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
